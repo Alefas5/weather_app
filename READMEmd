@@ -31,7 +31,14 @@ cd weather_app
 
 - python -m pytest test_app.py
 
-### 4. Access the API Documentation
+### 4. API Endpoints
+
+- POST /token: Obtain JWT token by providing a username and password.
+- POST /measurements/: Create a new weather measurement (requires a valid JWT token).
+- GET /measurements/: Retrieve all measurements or filter by station IDs and date ranges (requires a valid JWT token).
+- PUT /measurements/{station_id}/{timestamp}/: Update an existing measurement (requires a valid JWT token).
+
+### 5. Access the API Documentation
 
 - **Swagger UI**: http://127.0.0.1:8000/docs - Interactive API documentation.
 - **ReDoc**: http://127.0.0.1:8000/redoc - Alternative API documentation with a different style.
