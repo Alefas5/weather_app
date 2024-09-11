@@ -6,8 +6,5 @@ __pycache__/
 # Pytest cache directory
 .pytest_cache/
 
-# Environment variables file
-.env
-
 # Virtual environments
 venv/
