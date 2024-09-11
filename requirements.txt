@@ -1,0 +1,11 @@
+fastapi==0.95.1             # Core FastAPI framework
+uvicorn==0.22.0             # ASGI server for running FastAPI
+sqlalchemy==2.0.18          # ORM for interacting with SQLite
+pydantic==1.10.12           # Data validation and settings management
+python-dotenv==1.0.0        # Environment variable management
+httpx==0.25.0               # HTTP client for testing
+pytest==7.4.2               # Testing framework
+pytest-asyncio==0.21.0      # Async support for pytest
+PyJWT==2.8.0                # JWT library for token creation and validation
+pytz==2023.3                # Timezone definitions and conversion utilities
+python-multipart==0.0.6     # Library for parsing 'multipart/form-data', used in file uploads and form handling

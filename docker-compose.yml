@@ -1,0 +1,15 @@
+version: '3.8'  # Specify the Docker Compose file format version
+
+services:
+  app:
+    build:
+      context: .  # The current directory where Dockerfile is located
+      dockerfile: Dockerfile
+    container_name: Neuropublic_app  # Name of the container
+    ports:
+      - "8000:80"  # Map port 8000 on the host to port 80 in the container
+    environment:
+      - DATABASE_URL=sqlite:///app/weather.db  # Set environment variable for SQLite database in the app folder
+    volumes:
+      - .:/app  # Mount the current directory to the app directory in the container
+    restart: always  # Always restart the container if it stops

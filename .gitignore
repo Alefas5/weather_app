@@ -1,0 +1,13 @@
+# Created by pytest automatically.
+# Python cache directories
+__pycache__/
+*.py[cod]
+
+# Pytest cache directory
+.pytest_cache/
+
+# Environment variables file
+.env
+
+# Virtual environments
+venv/
