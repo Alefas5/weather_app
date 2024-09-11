@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 from datetime import datetime
 from urllib.parse import quote
-from app.main import app
+from main import app
 
 # Create a test client for the FastAPI app
 client = TestClient(app)
